@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starbucks Coffee Korea -</title>
+  <title>Landing_page | Starbucks Coffee Korea</title>
   <link rel="icon" href="./favicon.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
   <!--Google Fonts - 나눔고딕-->
@@ -13,6 +13,11 @@
 
   <!--Google Material Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="./css/main.css" />
   <script defer src="./js/main.js"></script>
@@ -24,8 +29,7 @@
       <a href="/" class="logo">
         <img src="./images/starbucks_logo.png" alt="Starbucks">
       </a>
-      <!-- sub-menu -->
-      <div class="sub-menu">
+      <div class="sub-menu"><!-- sub-menu -->
         <ul class="menu">
           <li><a href="/signin">Sign In</a></li>
           <li><a href="javascript:void(0)">My starbucks</a></li>
@@ -39,8 +43,7 @@
           </span>
         </div>
       </div>
-      <!-- main-menu -->
-      <ul class="main-menu">
+      <ul class="main-menu"><!-- main-menu -->
         <li class="item">
           <div class="item__name">COFFEE</div>
           <div class="item__contents">
@@ -166,7 +169,6 @@
             </div>
           </div>
         </li>
-
         <li class="item">
           <div class="item__name">STORE</div>
           <div class="item__contents">
@@ -200,7 +202,6 @@
             </div>
           </div>
         </li>
-
         <li class="item">
           <div class="item__name">RESPONSIBILITY</div>
           <div class="item__contents">
@@ -251,7 +252,6 @@
             </div>
           </div>
         </li>
-
         <li class="item">
           <div class="item__name">MY STARBUCKS REWARDS</div>
           <div class="item__contents">
@@ -296,7 +296,6 @@
             </div>
           </div>
         </li>
-
         <li class="item">
           <div class="item__name">WHAT'S NEW</div>
           <div class="item__contents">
@@ -344,6 +343,30 @@
       </ul>
     </div>
   </header>
+
+  <!-- VISUAL 순차적으로 image보이기-->
+  <section class="visual">
+    <div class="inner">
+      <div class="title fade-in">
+        <img src="./images/visual_title.png" alt="STARBUCKS DELIGHTFUL START TO THE YEARS" />
+        <a href="javascript:void(0)" class="btn btn--brown">자세히 보기</a>
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_cup1.png" alt="new OATMEAL LATTE" class="cup1 image" />
+        <img src="./images/visual_cup1_text.png" alt="오트밀 라떼" class="cup1 text" />
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_cup2.png" alt="new STARBUCKS CARAMEL CRUMBLE MOCHA" class="cup2 image" />
+        <img src="./images/visual_cup2_text.png" alt="스타벅스 카라멜 크럼블 모카" class="cup2 text" />
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
+      </div>
+    </div>
+  </section>
+
+
+
 </body>
 
 </html>
