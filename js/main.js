@@ -23,3 +23,21 @@ fadeEls.forEach(function (fadeEl, index) {
     opacity: 1,
   });
 });
+
+// Swiper - version업그레이드 해야함
+// new Swiper(선택자, 옵션)
+new Swiper(".notice-line .swiper-container", {
+  direction: "vertical",
+  autoplay: true,
+  loop: true,
+});
+
+new Swiper(".promotion .swiper-container", {
+  autoplay: {  
+    delay: 5000,
+  },
+  loop: true,
+  slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수
+  spaceBetween: 10, // 슬라이드 사이 여백
+  centeredSlides: true, // 1번 슬라이드가 가운데 보이기
+});
