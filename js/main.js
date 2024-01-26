@@ -33,11 +33,16 @@ new Swiper(".notice-line .swiper-container", {
 });
 
 new Swiper(".promotion .swiper-container", {
-  autoplay: {  
+  autoplay: {
     delay: 5000,
   },
   loop: true,
   slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수
   spaceBetween: 10, // 슬라이드 사이 여백
   centeredSlides: true, // 1번 슬라이드가 가운데 보이기
+  navigation: {
+    // 슬라이드 이전/다음 버튼 사용 여부
+    prevEl: ".swiper-prev", // 이전 버튼 선택자
+    nextEl: ".swiper-next", // 다음 버튼 선택자
+  },
 });
