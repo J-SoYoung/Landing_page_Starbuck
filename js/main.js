@@ -24,8 +24,7 @@ fadeEls.forEach(function (fadeEl, index) {
   });
 });
 
-// Swiper - version업그레이드 해야함
-// new Swiper(선택자, 옵션)
+// Swiper(version checked) => new Swiper(선택자, 옵션)
 new Swiper(".notice-line .swiper-container", {
   direction: "vertical",
   autoplay: true,
@@ -42,7 +41,27 @@ new Swiper(".promotion .swiper-container", {
   centeredSlides: true, // 1번 슬라이드가 가운데 보이기
   navigation: {
     // 슬라이드 이전/다음 버튼 사용 여부
-    prevEl: ".swiper-prev", // 이전 버튼 선택자
-    nextEl: ".swiper-next", // 다음 버튼 선택자
+    prevEl: ".swiper-prev",
+    nextEl: ".swiper-next",
   },
+});
+
+// Toggle
+const promotionEl = document.querySelector(".promotion");
+const promotionToggleDiv = document.querySelector(".inner__right");
+const promotionToggleBtn = document.querySelector(".toggle-promotion");
+const promotionToggleIcon = promotionToggleBtn.querySelector(".material-icons");
+
+let isHidePromotion = false;
+promotionToggleDiv.addEventListener("click", () => {
+  isHidePromotion = !isHidePromotion;
+  if (isHidePromotion) {
+    promotionEl.classList.add("hide");
+    promotionToggleIcon.innerText = "download";
+    promotionToggleBtn.appendChild(promotionToggleIcon);
+  } else {
+    promotionEl.classList.remove("hide");
+    promotionToggleIcon.innerText = "upload";
+    promotionToggleBtn.appendChild(promotionToggleIcon);
+  }
 });
