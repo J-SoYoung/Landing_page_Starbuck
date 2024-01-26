@@ -17,9 +17,9 @@ a {
   margin: 0 auto;
   position: relative;
 }
-.hide {
+/* .hide {
   display: none;
-}
+} */
 .btn {
   width: 130px;
   padding: 10px;
@@ -287,8 +287,7 @@ header .badges .badge {
 }
 
 /*NOTICE ----------------------------------*/
-.notice {
-}
+
 .notice .notice-line {
   position: relative;
 }
@@ -383,6 +382,9 @@ header .badges .badge {
   overflow: hidden;
   transition: height 0.4s;
 }
+.notice .promotion.hide {
+  height: 0;
+}
 
 .notice .promotion .swiper-container {
   /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
@@ -433,6 +435,49 @@ header .badges .badge {
   right: 50%;
   margin-right: -480px;
 }
-.notice .promotion .swiper-pagination {
-  border: 1px solid red;
+
+/* REWARDS -------------------------- */
+.rewards {
+  position: relative;
+  /* display: flex; */
+}
+.rewards .bg-left {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #272727;
+}
+.rewards .bg-right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #d5c798;
+}
+.rewards .inner {
+  background-image: url("../images/rewards.jpg");
+  height: 241px;
+}
+
+.rewards .inner .btn-group {
+  position: absolute;
+  right: 0;
+  bottom: 24px;
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rewards .inner .btn-group .btn.sign-up {
+  margin-right: 10px;
+}
+.rewards .inner .btn-group .btn.sign-in {
+  width: 110px;
+}
+.rewards .inner .btn-group .btn.gift {
+  margin-top: 10px;
+  flex: 1;
 }

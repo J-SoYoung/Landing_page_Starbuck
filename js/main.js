@@ -57,6 +57,7 @@ promotionToggleDiv.addEventListener("click", () => {
   isHidePromotion = !isHidePromotion;
   if (isHidePromotion) {
     promotionEl.classList.add("hide");
+    
     promotionToggleIcon.innerText = "download";
     promotionToggleBtn.appendChild(promotionToggleIcon);
   } else {
